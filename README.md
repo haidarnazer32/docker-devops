@@ -11,12 +11,6 @@ Try after run:
 First site:
 http://127.0.0.1/
 
-Second site:
-http://127.0.0.1:8080/
-
-Third site:
-http://127.0.0.1:9090/
-
 <br />
 #Configuration:
 
@@ -27,15 +21,7 @@ You can change the sites, just like in any Nginx.
 #Volumes:
 Site :
 <br />
-`- ./nginx-data/site-data/example_one:/var/www/example_one.com/public_html`
-<br />
-Site :
-<br />
-`- ./nginx-data/site-data/example_two:/var/www/example_two.com/public_html`
-<br />
-Site :
-<br />
-`- ./nginx-data/site-data/example_three:/var/www/example_three.com/public_html`
+`- ./nginx-data/site-data/azerim:/var/www/example_one.com/public_html`
 <br />
 Site included:
 <br />

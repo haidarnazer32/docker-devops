@@ -1,0 +1,15 @@
+version: '2'
+services:
+ nginx:
+  container_name: nginx-with-block
+  image: nginx
+  ports:
+  - "80:80"
+  volumes:
+  - ./nginx-data/site-data/azerim:/var/www/azerim.com/public_html
+  - ./nginx-data/sites-available:/etc/nginx/sites-available
+  - ./nginx-data/conf/nginx.conf:/etc/nginx/nginx.conf
+
+networks:
+  nginx:
+    driver: bridge
